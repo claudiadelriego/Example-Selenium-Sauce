@@ -18,7 +18,7 @@ public class SampleTest {
 
     public static final String USERNAME = "saucelabsclaudia";
     public static final String ACCESS_KEY = "996c6380-f374-49b9-bfc6-c651a9b67e29";
-    public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";
+    public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@maki82084.miso.saucelabs.com:4445/wd/hub";
 
 
     protected String browser;
