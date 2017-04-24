@@ -1,4 +1,5 @@
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,9 +17,9 @@ import java.util.LinkedList;
 @RunWith(ConcurrentParameterized.class)
 public class SampleTest {
 
-    public static final String USERNAME = "saucelabsclaudia";
-    public static final String ACCESS_KEY = "996c6380-f374-49b9-bfc6-c651a9b67e29";
-    public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@maki82084.miso.saucelabs.com:4445/wd/hub";
+    public static final String USERNAME = "claudia_alvarez";
+    public static final String ACCESS_KEY = "5258476c-8610-48c5-a2f9-520c53084e73";
+    public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";
 
 
     protected String browser;
@@ -37,7 +38,7 @@ public class SampleTest {
     public static LinkedList<String[]> browsersStrings() {
         LinkedList<String[]> browsers = new LinkedList<String[]>();
         // windows 7, IE 9
-        browsers.add(new String[]{"Windows 7", "9", "internet explorer"});
+        browsers.add(new String[]{"Windows 8", "50", "chrome"});
         // windows 8, IE 10
         browsers.add(new String[]{"Windows 8", "10", "internet explorer"});
         // windows 8.1, IE 11
@@ -59,7 +60,7 @@ public class SampleTest {
     public void testCaseExample() {
         driver.get("https://saucelabs.com/test/guinea-pig");
         System.out.println("title of page is: " + driver.getTitle());
- driver.close();
+        driver.quit();
 
     }
 
