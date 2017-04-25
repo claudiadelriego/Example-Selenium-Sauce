@@ -17,6 +17,7 @@ import java.util.LinkedList;
 @RunWith(ConcurrentParameterized.class)
 public class SampleTest {
 
+
     public static final String USERNAME = "claudia_alvarez";
     public static final String ACCESS_KEY = "5258476c-8610-48c5-a2f9-520c53084e73";
     public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";
