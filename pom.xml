@@ -6,7 +6,11 @@
 
     <groupId>QA</groupId>
     <artifactId>Simple</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>../Pipeline-Jenkins</module>
+    </modules>
     <dependencies>
 
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
